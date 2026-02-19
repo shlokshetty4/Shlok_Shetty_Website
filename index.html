@@ -1,63 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Shlok Shetty | Portfolio</title>
-    <meta
-      name="description"
-      content="Shlok Shetty — Informatics (Data Science) student at UW Seattle. Software Engineering & Data Science internships, projects, and skills."
-    />
-
+    <title>Shlok Shetty — Portfolio</title>
+    <meta name="description" content="Portfolio website for Shlok Shetty — projects, experience, and contact." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Modern, readable font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css" />
-    <script defer src="script.js"></script>
   </head>
 
   <body>
-    <!-- Top nav -->
-    <header class="site-header" id="top">
+    <header class="site-header">
       <div class="container nav">
-        <a class="brand" href="#top" aria-label="Go to top">
-          <span class="brand-dot" aria-hidden="true"></span>
-          <span>Shlok Shetty</span>
+        <a class="brand" href="#top">
+          <span class="brand-dot"></span>
+          <span class="brand-text">Shlok Shetty</span>
         </a>
 
-        <nav class="nav-links" aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact" class="btn btn-primary">Contact</a>
-        </nav>
-
-        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-          <span></span><span></span><span></span>
+        <button class="nav-toggle" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
+
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact" class="btn btn-sm">Contact</a>
+        </nav>
       </div>
     </header>
 
-    <main>
-      <!-- Hero -->
+    <main id="top">
       <section class="hero">
         <div class="container hero-grid">
-          <div class="hero-text">
-            <p class="pill">UW Seattle • Informatics (Data Science) • Applied Math Minor</p>
+          <div class="hero-copy">
+            <p class="pill">Data / SWE • UW Informatics</p>
             <h1>
-              Building data-driven products — from <span class="grad">ML pipelines</span>
-              to <span class="grad">full-stack tools</span>.
+              Building clean, high-impact
+              <span class="accent">data products</span>
+              from end to end.
             </h1>
-            <p class="subhead">
-              I’m a Data Science-focused Informatics student (Expected Dec 2026) with experience
-              shipping an OCR receipt processing system and building analytics tools for UW Men’s Basketball.
-              I like turning messy data into clean, usable decisions.
+            <p class="lead">
+              I build practical end-to-end data products: clean data, model it, then ship it in tools people actually use.
             </p>
 
             <div class="hero-cta">
@@ -65,284 +53,295 @@
               <a class="btn btn-ghost" href="#experience">See Experience</a>
             </div>
 
-            <div class="quick-links" aria-label="Social links">
-              <!-- Replace # with your actual links -->
-              <a href="https://www.linkedin.com/in/shlok-shetty-638269295/" target="_blank" rel="noreferrer">LinkedIn</a>
-              <span class="dot">•</span>
-              <a href="https://github.com/shlokshetty4" target="_blank" rel="noreferrer">GitHub</a>
-              <span class="dot">•</span>
-              <a href="mailto:Shloks4@uw.edu">Shloks4@uw.edu</a>
+            <div class="hero-stats">
+              <div class="stat">
+                <div class="stat-kicker">Focus</div>
+                <div class="stat-value">Data Products + SWE</div>
+              </div>
+              <div class="stat">
+                <div class="stat-kicker">Core Stack</div>
+                <div class="stat-value">Python • SQL • React</div>
+              </div>
+              <div class="stat">
+                <div class="stat-kicker">Domain</div>
+                <div class="stat-value">Sports + Automation</div>
+              </div>
+            </div>
+
+            <div class="quick-links">
+              <a href="https://github.com/shlokshetty4" target="_blank" rel="noreferrer">🐙 GitHub</a>
+              <a href="https://www.linkedin.com/in/shlok-shetty-638269295/" target="_blank" rel="noreferrer">💼 LinkedIn</a>
+              <a href="mailto:shlokshetty@gmail.com">✉️ Email</a>
             </div>
           </div>
 
-          <aside class="hero-card" aria-label="Highlights">
-            <div class="card">
-              <h2 class="card-title">Highlights</h2>
-
-              <ul class="highlights">
-                <li>
-                  <span class="badge">SWE Intern</span>
-                  Built an OCR-powered receipt processing system with a React front end + Python API.
-                </li>
-                <li>
-                  <span class="badge">Data Science</span>
-                  Built ranking + grading workflows for 2,000+ transfer portal players (UW Men’s Basketball).
-                </li>
-                <li>
-                  <span class="badge">Tools</span>
-                  Python, R, SQL, React/JS, Tableau, Power BI, AWS.
-                </li>
-              </ul>
-
-              <div class="card-actions">
-                <a class="btn btn-secondary" href="#contact">Get in touch</a>
-                <a class="btn btn-ghost" href="#skills">Tech stack</a>
+          <div class="hero-card card">
+            <div class="hero-card-top">
+              <div class="avatar">SS</div>
+              <div>
+                <h2 class="hero-name">Shlok Shetty</h2>
+                <p class="muted">Seattle, WA • University of Washington</p>
               </div>
             </div>
-          </aside>
+
+            <div class="hero-card-body">
+              <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">SQL</span>
+                <span class="chip">R</span>
+                <span class="chip">Shiny</span>
+                <span class="chip">Streamlit</span>
+                <span class="chip">React</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- About -->
-      <section class="section" id="about">
+      <section id="about" class="section">
         <div class="container">
           <div class="section-head">
             <h2>About</h2>
-            <p>
-              I’m focused on building practical, end-to-end data products—cleaning data, modeling,
-              and delivering results in tools that people actually use.
-            </p>
+            <p class="muted">A quick snapshot. Scroll for projects + experience.</p>
           </div>
 
-          <div class="grid-2">
+          <div class="grid grid-2">
             <div class="card">
-              <h3>What I’m into</h3>
+              <h3>✨ What I’m into</h3>
+              <p>
+                I like turning messy datasets into clean, decision-ready insights. I enjoy the full pipeline — data wrangling,
+                modeling, and building a UI that makes it usable.
+              </p>
               <ul class="list">
-                <li>Applied machine learning and statistical modeling</li>
-                <li>Analytics for sports + decision support tools</li>
-                <li>Data engineering fundamentals (pipelines, reliability, clean schemas)</li>
-                <li>Building UIs that make data easy to validate and trust</li>
+                <li>Sports analytics: player evaluation, prediction, and visualization</li>
+                <li>Automation: tools that save analysts time and reduce manual work</li>
+                <li>Product mindset: build the thing people actually click</li>
               </ul>
             </div>
 
             <div class="card">
-              <h3>Education</h3>
-              <p class="muted">
-                <strong>University of Washington — Seattle</strong><br />
-                B.S. Informatics (Data Science), Expected Dec 2026<br />
-                Minor: Applied Mathematics
-              </p>
-              <p class="muted">
-                Coursework: Data Structures & Algorithms, Machine Learning, Databases & Data Modeling,
-                Statistical Methods, Probability, Linear Algebra, Client-Side Development.
-              </p>
+              <h3>🎓 Education</h3>
+              <p>University of Washington — Informatics (Data Science), expected 2026.</p>
+              <div class="mini">
+                <div>
+                  <div class="k">Relevant</div>
+                  <div class="v">Data Science, ML, DB Systems, Visualization</div>
+                </div>
+                <div>
+                  <div class="k">Tools</div>
+                  <div class="v">Python, R, SQL, Tableau, JS</div>
+                </div>
+              </div>
+              <p class="muted small">Open to SWE / Data internships. Prefer roles where I can build + ship.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Experience -->
-      <section class="section" id="experience">
-        <div class="container">
-          <div class="section-head">
-            <h2>Experience</h2>
-            <p>Real projects, shipped features, measurable outcomes.</p>
-          </div>
-
-          <div class="timeline">
-            <article class="timeline-item card">
-              <div class="timeline-top">
-                <h3>Software Engineering Intern</h3>
-                <p class="muted">Larsen & Toubro Technology Services • Jun 2025 – Aug 2025</p>
-              </div>
-              <ul class="list">
-                <li>Built an OCR-powered receipt processing system to extract key fields into structured tables.</li>
-                <li>Designed an interactive React/JavaScript UI showing PDFs side-by-side with extracted data for validation.</li>
-                <li>Implemented CSV/Excel export for smooth handoff into financial systems.</li>
-                <li>Developed and maintained a Python backend API for parsing, table generation, and file handling.</li>
-              </ul>
-            </article>
-
-            <article class="timeline-item card">
-              <div class="timeline-top">
-                <h3>Data Science Intern</h3>
-                <p class="muted">UW Men’s Basketball • Jan 2025 – Apr 2025</p>
-              </div>
-              <ul class="list">
-                <li>Worked with the GM + analytics team in an Agile workflow to deliver data solutions iteratively.</li>
-                <li>Designed a ranking system for 2,000+ transfer portal players to support scouting decisions.</li>
-                <li>Engineered a player grading model using in-game metrics for actionable insights.</li>
-                <li>Automated data collection + processing pipelines to keep player stats updated in near real time.</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Projects -->
-      <section class="section" id="projects">
+      <section id="projects" class="section section-alt">
         <div class="container">
           <div class="section-head">
             <h2>Projects</h2>
-            <p>Selected work that shows how I approach modeling, engineering, and storytelling with data.</p>
+            <p class="muted">A few things I’ve built recently.</p>
           </div>
 
-          <div class="project-grid">
+          <div class="grid grid-3">
             <article class="card project">
               <div class="project-head">
-                <h3>College Basketball Player Grading Model</h3>
-                <p class="muted">R • Jan 2025 – Apr 2025</p>
+                <h3>Basketball Grading + PnR Modeling</h3>
+                <p class="muted">Ridge regression pipeline + SQL extraction</p>
               </div>
-              <p class="muted">
-                Built an analytical framework to evaluate NCAA D-I men’s basketball players using performance,
-                efficiency, and team context—designed for scouting and roster decisions.
-              </p>
-              <ul class="chips" aria-label="Tech used">
-                <li>hoopR</li><li>dplyr</li><li>tidyr</li><li>ggplot2</li><li>Feature engineering</li>
-              </ul>
-              <ul class="list">
-                <li>Integrated AP Poll rankings, conference strength, transfers, and team performance for context.</li>
-                <li>Applied filtering rules to reduce noise from small samples and improve signal quality.</li>
-              </ul>
-              <div class="project-actions">
-                <!-- Replace with repo/demo links -->
-                <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">GitHub Repo</a>
-                <a class="btn btn-secondary" href="#contact">Ask for demo</a>
+
+              <div class="project-media media-basketball">
+                <div class="project-media-icon">🏀</div>
+                <div class="project-media-label">Basketball Grading</div>
+              </div>
+
+              <details class="details">
+                <summary class="details-summary">What I built</summary>
+                <ul class="list">
+                  <li>Extracted play data with SQL; built model-ready tables.</li>
+                  <li>Trained ridge models for PnR plus-minus style grades.</li>
+                  <li>Generated percentiles for downstream apps.</li>
+                </ul>
+              </details>
+
+              <div class="impact-row">
+                <div class="impact-pill">🧩 Feature engineering</div>
+                <div class="impact-pill">🗂️ Context-aware ranking</div>
               </div>
             </article>
 
             <article class="card project">
               <div class="project-head">
-                <h3>NFL MVP Prediction Model</h3>
-                <p class="muted">Python • Jan 2025</p>
+                <h3>NFL MVP Predictor</h3>
+                <p class="muted">Feature engineering + modeling + visualization</p>
               </div>
-              <p class="muted">
-                Built a logistic regression classification model using 17 passing + rushing metrics to forecast MVP probability.
-              </p>
-              <ul class="chips" aria-label="Tech used">
-                <li>pandas</li><li>scikit-learn</li><li>StandardScaler</li><li>LogReg</li>
-              </ul>
-              <ul class="list">
-                <li>Used an 80/20 stratified split to preserve class balance.</li>
-                <li>Automated ingestion → training → evaluation for quick “what-if” testing across candidate seasons.</li>
-              </ul>
-              <div class="project-actions">
-                <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">GitHub Repo</a>
-                <a class="btn btn-secondary" href="#contact">Ask for details</a>
+
+              <div class="project-media media-football">
+                <div class="project-media-icon">🏈</div>
+                <div class="project-media-label">NFL MVP</div>
+              </div>
+
+              <details class="details">
+                <summary class="details-summary">What I built</summary>
+                <ul class="list">
+                  <li>Built dataset from historical NFL stats.</li>
+                  <li>Trained models and interpreted key drivers.</li>
+                  <li>Produced visuals for evaluation and storytelling.</li>
+                </ul>
+              </details>
+
+              <div class="impact-row">
+                <div class="impact-pill">📈 Model pipeline</div>
+                <div class="impact-pill">⚙️ Reusable training loop</div>
               </div>
             </article>
 
             <article class="card project">
               <div class="project-head">
-                <h3>OCR Receipt Processing (Internship Build)</h3>
-                <p class="muted">React + Python API • 2025</p>
+                <h3>OCR Receipt Parser</h3>
+                <p class="muted">PDF → fields extraction app</p>
               </div>
-              <p class="muted">
-                End-to-end pipeline to extract receipt fields from PDFs and support human validation in a UI.
-              </p>
-              <ul class="chips" aria-label="Tech used">
-                <li>React</li><li>JavaScript</li><li>Python</li><li>PDF parsing</li><li>Exports</li>
-              </ul>
-              <ul class="list">
-                <li>Side-by-side UI for reviewing PDF vs extracted fields.</li>
-                <li>CSV/Excel export to integrate with finance workflows.</li>
-              </ul>
-              <div class="project-actions">
-                <a class="btn btn-secondary" href="#contact">Request screenshots</a>
+
+              <div class="project-media media-ocr">
+                <div class="project-media-icon">🧾</div>
+                <div class="project-media-label">OCR Pipeline</div>
+              </div>
+
+              <details class="details">
+                <summary class="details-summary">What I built</summary>
+                <ul class="list">
+                  <li>Preprocessed PDFs for OCR accuracy.</li>
+                  <li>Extracted structured fields with regex.</li>
+                  <li>Exported results for analysis.</li>
+                </ul>
+              </details>
+
+              <div class="impact-row">
+                <div class="impact-pill">🔎 Human-in-the-loop UI</div>
+                <div class="impact-pill">📤 CSV exports</div>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- Skills -->
-      <section class="section" id="skills">
+      <section id="experience" class="section">
         <div class="container">
           <div class="section-head">
-            <h2>Skills</h2>
-            <p>A quick snapshot of what I’m comfortable using in production and in coursework.</p>
+            <h2>Experience</h2>
+            <p class="muted">Internships and professional work.</p>
           </div>
 
-          <div class="skills-grid">
-            <div class="card">
-              <h3>Languages</h3>
-              <p class="muted">
-                Python, R, Java, MATLAB, SQL, HTML/CSS, JavaScript, C/C++
-              </p>
-            </div>
+          <div class="timeline">
 
-            <div class="card">
-              <h3>Libraries / Frameworks</h3>
-              <p class="muted">
-                Pandas, NumPy, dplyr, tidyr, ggplot2, scikit-learn, PyTorch, TensorFlow
-              </p>
-            </div>
+            <article class="timeline-item card">
+              <div class="timeline-top">
+                <div>
+                  <h3>Software Engineering Intern</h3>
+                  <p class="muted">Crest Data • Jan 2026 – Present</p>
+                </div>
+                <span class="tag">SWE</span>
+              </div>
 
-            <div class="card">
-              <h3>Tools</h3>
-              <p class="muted">
-                Excel, Linux/UNIX, LaTeX, Power BI, Tableau, AWS, CUDA
-              </p>
-            </div>
+              <details class="details">
+                <summary class="details-summary">Show highlights</summary>
+                <ul class="list">
+                  <li>Built backend Python services integrating Jira and VirusTotal APIs to process 500+ daily alerts.</li>
+                  <li>Engineered a threat intelligence pipeline achieving 95% classification accuracy and sub-3-minute response times.</li>
+                  <li>Developed secure alert workflows handling 15K+ monthly alerts with 99.2% uptime.</li>
+                  <li>Reduced manual triage time by 75% through automation and structured analysis.</li>
+                </ul>
+              </details>
+            </article>
 
-            <div class="card">
-              <h3>Strengths</h3>
-              <p class="muted">
-                Clear communication, collaborative problem-solving, time management, adaptability.
-              </p>
-            </div>
+            <article class="timeline-item card">
+              <div class="timeline-top">
+                <div>
+                  <h3>Software Engineering Intern</h3>
+                  <p class="muted">Larsen & Toubro Technology Services • Jun 2025 – Aug 2025</p>
+                </div>
+                <span class="tag">SWE</span>
+              </div>
+
+              <details class="details">
+                <summary class="details-summary">Show highlights</summary>
+                <ul class="list">
+                  <li>Built an OCR-powered receipt processing system extracting structured financial data from PDFs.</li>
+                  <li>Developed Python backend APIs for text parsing, table extraction, and file handling.</li>
+                  <li>Designed a React interface displaying receipts alongside extracted structured data.</li>
+                  <li>Implemented CSV and Excel export functionality for enterprise financial integration.</li>
+                </ul>
+              </details>
+            </article>
+
+            <article class="timeline-item card">
+              <div class="timeline-top">
+                <div>
+                  <h3>Data Science Intern</h3>
+                  <p class="muted">University of Washington Men’s Basketball • Jan 2025 – Apr 2025</p>
+                </div>
+                <span class="tag">Data</span>
+              </div>
+
+              <details class="details">
+                <summary class="details-summary">Show highlights</summary>
+                <ul class="list">
+                  <li>Built statistical models to rank 2,000+ NCAA transfer portal players.</li>
+                  <li>Automated data pipelines to ensure up-to-date player evaluations.</li>
+                  <li>Designed advanced player grading models combining performance and contextual metrics.</li>
+                  <li>Delivered clear ranking reports and visualizations to coaching staff.</li>
+                </ul>
+              </details>
+            </article>
+
           </div>
         </div>
       </section>
 
-      <!-- Contact -->
-      <section class="section" id="contact">
+      <section id="contact" class="section section-alt">
         <div class="container">
           <div class="section-head">
             <h2>Contact</h2>
-            <p>If you’re hiring, collaborating, or want to chat about projects, email is best.</p>
+            <p class="muted">Want to chat? Here’s the easiest way to reach me.</p>
           </div>
 
-          <div class="grid-2">
+          <div class="grid grid-2">
             <div class="card">
-              <h3>Email</h3>
-              <p class="muted">
-                <a href="mailto:Shloks4@uw.edu">Shloks4@uw.edu</a>
-              </p>
-              <h3>Phone</h3>
-              <p class="muted">214-236-7140</p>
               <h3>Links</h3>
-              <p class="muted">
-                <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
-                <span class="dot">•</span>
-                <a href="#" target="_blank" rel="noreferrer">GitHub</a>
-              </p>
+              <ul class="list">
+                <li><a href="mailto:shlokshetty@gmail.com">shlokshetty@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/shlok-shetty-638269295/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                <li><a href="https://github.com/shlokshetty4" target="_blank" rel="noreferrer">GitHub</a></li>
+              </ul>
             </div>
 
             <div class="card">
-              <h3>Message template</h3>
-              <p class="muted">Copy/paste this if you want a quick outreach note:</p>
-              <textarea class="template" readonly rows="8">
-Hi Shlok,
+              <h3>Email template</h3>
+              <textarea class="template" rows="9" readonly>
+Hi Shlok —
 
-I came across your portfolio and wanted to connect. I’m interested in your work on [project/area], especially [specific detail]. If you’re open to it, I’d love to chat about [role/collaboration/topic].
+I’m reaching out about [role/company]. I saw your work on [project] and thought it aligned with [team/need]. Would you be open to a quick chat this week?
 
 Best,
-[Your Name]
+[Name]
               </textarea>
-              <button class="btn btn-secondary" id="copyTemplate">Copy template</button>
-              <p class="tiny muted" id="copyStatus" role="status" aria-live="polite"></p>
+
+              <div class="template-actions">
+                <button class="btn btn-primary btn-sm" id="copyTemplate">Copy</button>
+                <span class="muted small" id="copyStatus" aria-live="polite"></span>
+              </div>
             </div>
           </div>
+
+          <footer class="footer muted small">
+            <span>© <span id="year"></span> Shlok Shetty</span>
+          </footer>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container footer-row">
-        <p class="muted">© <span id="year"></span> Shlok Shetty</p>
-        <a class="muted" href="#top">Back to top ↑</a>
-      </div>
-    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
