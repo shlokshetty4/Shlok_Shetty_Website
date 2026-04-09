@@ -7,7 +7,6 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 
   <link rel="stylesheet" href="styles.css" />
@@ -17,7 +16,6 @@
 
 <header class="site-header">
   <div class="container nav">
-
     <a class="brand" href="#">
       <span class="brand-dot"></span>
       <span class="brand-text">Shlok Shetty</span>
@@ -25,21 +23,18 @@
 
     <nav class="nav-links">
       <a href="#about">About</a>
+      <a href="#capstone">Capstone</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a class="btn btn-sm" href="Shlok_Shetty_Resume_2026.pdf" target="_blank">Resume</a>
       <a href="#contact" class="btn btn-sm">Contact</a>
     </nav>
-
   </div>
 </header>
 
-
 <section class="hero">
   <div class="container hero-grid">
-
     <div class="hero-copy">
-
       <p class="pill">Software Engineering • Data Science • UW Informatics</p>
 
       <h1>
@@ -52,234 +47,201 @@
         I build scalable backend systems, ML models, and full-stack data applications.
       </p>
 
-
       <div class="hero-cta">
-
-        <a class="btn btn-primary" href="Shlok_Shetty_Resume_2026.pdf" target="_blank">
-          View Resume
-        </a>
-
-        <a class="btn btn-ghost" href="#projects">
-          View Projects
-        </a>
-
+        <a class="btn btn-primary" href="Shlok_Shetty_Resume_2026.pdf" target="_blank">View Resume</a>
+        <a class="btn btn-ghost" href="#capstone">View Capstone</a>
       </div>
-
 
       <div class="quick-links">
-
-        <a href="Shlok_Shetty_Resume_2026.pdf" target="_blank">
-          Resume
-        </a>
-
-        <a href="https://github.com/shlokshetty4" target="_blank">
-          GitHub
-        </a>
-
-        <a href="https://linkedin.com/in/shlok-shetty" target="_blank">
-          LinkedIn
-        </a>
-
-        <a href="mailto:shloks4@uw.edu">
-          Email
-        </a>
-
+        <a href="Shlok_Shetty_Resume_2026.pdf" target="_blank">Resume</a>
+        <a href="https://github.com/shlokshetty4" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/shlok-shetty" target="_blank">LinkedIn</a>
+        <a href="mailto:shloks4@uw.edu">Email</a>
       </div>
-
     </div>
 
-
     <div class="hero-card card">
-
       <h3>Skills</h3>
-
       <div class="chips">
-
         <span class="chip">Python</span>
         <span class="chip">SQL</span>
         <span class="chip">JavaScript</span>
         <span class="chip">React</span>
         <span class="chip">Machine Learning</span>
         <span class="chip">AWS</span>
-
       </div>
-
     </div>
-
   </div>
 </section>
 
-
-
 <section id="about" class="section">
-
   <div class="container">
-
     <h2>About</h2>
-
     <p>
       Informatics student at the University of Washington specializing in Data Science and Software Engineering.
       I have experience building production backend systems, ML pipelines, and full-stack applications.
     </p>
-
   </div>
-
 </section>
 
+<section id="capstone" class="section section-alt">
+  <div class="container">
+    <h2>Capstone Project</h2>
+    <p class="section-intro">
+      My Capstone project is an in-progress AI-enabled SOC Engine focused on automating triage for malsite alerts.
+      The system uses MCP-style services to pull alerts from Jira, extract domains or URLs, enrich them with
+      VirusTotal, classify them, and post a structured triage summary back into the original Jira ticket.
+    </p>
 
+    <div class="grid grid-2 capstone-grid">
+      <div class="card project">
+        <h3>Goals</h3>
+        <ul class="list">
+          <li>Reduce manual SOC workload by automating repetitive malsite alert investigation steps.</li>
+          <li>Improve triage speed and consistency through a standardized end-to-end workflow.</li>
+          <li>Generate explainable outputs that analysts can use for downstream response decisions.</li>
+          <li>Build a system that is extensible for future verdict types, enrichment sources, and workflow improvements.</li>
+        </ul>
+      </div>
+
+      <div class="card project">
+        <h3>Team Process So Far</h3>
+        <ul class="list">
+          <li>Completed project setup, technical design, and development environment preparation.</li>
+          <li>Built the core Jira and VirusTotal integrations needed for alert retrieval and enrichment.</li>
+          <li>Implemented indicator extraction for domains and URLs from alert metadata.</li>
+          <li>Reached an MVP that can classify alerts, generate triage summaries, and auto-post results to Jira.</li>
+          <li>Moved into spring-quarter refinement focused on testing, accuracy improvements, confidence thresholds, and feature expansion.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid grid-2 capstone-grid capstone-top-gap">
+      <div class="card project">
+        <h3>Milestones Completed</h3>
+        <ul class="list">
+          <li><strong>Milestone 1:</strong> Project setup, project charter, PRD, architecture planning, and API access confirmation.</li>
+          <li><strong>Milestone 2:</strong> Core MCP server functionality for Jira retrieval, VirusTotal querying, and domain/URL extraction.</li>
+          <li><strong>Milestone 3:</strong> classification logic, triage summary generation, auto-posting to Jira, and MVP demo readiness.</li>
+          <li><strong>Current spring work:</strong> Refinement, testing, logging, error handling, confidence thresholds, and expanded features.</li>
+        </ul>
+      </div>
+
+      <div class="card project">
+        <h3>My Individual Contributions & Learnings</h3>
+        <ul class="list">
+          <li>Strengthened my skills in backend system design, API integration, and workflow automation.</li>
+          <li>Learned how to build software for real SOC workflows rather than just isolated technical demos.</li>
+          <li>Focused on making the system more reliable through logging, error handling, and maintainable structure.</li>
+          <li>Gained experience balancing MVP delivery with longer-term product thinking and extensibility.</li>
+          <li>Developed a better understanding of how constraints like API limits, alert variability, and non-production environments shape engineering decisions.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid grid-2 capstone-grid capstone-top-gap">
+      <div class="card project">
+        <h3>Takeaways</h3>
+        <p>
+          One of the biggest lessons from this project has been learning how to translate an operational problem into
+          a practical engineering workflow. Instead of trying to overbuild the system, our team focused first on a clear
+          MVP: retrieve the alert, extract the indicator, enrich it, classify it, summarize it, and write the result back
+          to Jira. That process taught me how real-world software projects succeed by being iterative, explainable, and useful.
+        </p>
+      </div>
+
+      <div class="card project">
+        <h3>Next Steps</h3>
+        <ul class="list">
+          <li>Improve classification quality using few-shot examples and stronger thresholding logic.</li>
+          <li>Add expanded verdict categories such as DLP and insider threats.</li>
+          <li>Build a metrics dashboard to track triage speed, verdict distribution, and accuracy trends.</li>
+          <li>Support human-in-the-loop workflows for higher-risk malicious cases.</li>
+          <li>Complete final documentation, testing, presentation, and sponsor handoff.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="experience" class="section">
-
   <div class="container">
-
     <h2>Experience</h2>
-
     <div class="timeline">
-
       <div class="card">
-
         <h3>Software Engineering Intern</h3>
-
         <p class="muted">Crest Data • Jan 2026 – Present</p>
-
         <ul class="list">
           <li>Built production backend Python services integrating Jira and VirusTotal APIs</li>
           <li>Processed 500+ daily alerts and reduced manual triage time by 75%</li>
           <li>Achieved 95% classification accuracy with threat intelligence pipeline</li>
           <li>Handled 15K+ monthly alerts with 99.2% uptime</li>
         </ul>
-
       </div>
 
-
-
       <div class="card">
-
         <h3>Software Engineering Intern</h3>
-
         <p class="muted">Larsen & Toubro Technology Services • Jun 2025 – Aug 2025</p>
-
         <ul class="list">
           <li>Built OCR-powered receipt processing system</li>
           <li>Developed Python backend APIs and React frontend</li>
           <li>Extracted structured financial data from PDFs</li>
           <li>Implemented CSV and Excel export functionality</li>
         </ul>
-
       </div>
 
-
-
       <div class="card">
-
         <h3>Data Science Intern</h3>
-
         <p class="muted">University of Washington Men’s Basketball • Jan 2025 – Apr 2025</p>
-
         <ul class="list">
           <li>Built statistical models ranking 2,000+ NCAA transfer portal players</li>
           <li>Automated data pipelines and ingestion workflows</li>
           <li>Developed player grading and scouting models</li>
           <li>Delivered reports and analytics to coaching staff</li>
         </ul>
-
       </div>
-
     </div>
-
   </div>
-
 </section>
-
-
 
 <section id="projects" class="section">
-
   <div class="container">
-
     <h2>Projects</h2>
-
     <div class="grid grid-3">
-
       <div class="card">
-
         <h3>AI Story Generation Agent</h3>
-
-        <p>
-          Built AI agent using Ollama to generate structured long-form stories.
-        </p>
-
+        <p>Built AI agent using Ollama to generate structured long-form stories.</p>
       </div>
 
-
       <div class="card">
-
         <h3>NFL MVP Prediction Model</h3>
-
-        <p>
-          Logistic regression model predicting NFL MVP outcomes using player stats.
-        </p>
-
+        <p>Logistic regression model predicting NFL MVP outcomes using player stats.</p>
       </div>
-
 
       <div class="card">
-
         <h3>OCR Receipt Parser</h3>
-
-        <p>
-          Full-stack application extracting structured data from receipt PDFs.
-        </p>
-
+        <p>Full-stack application extracting structured data from receipt PDFs.</p>
       </div>
-
     </div>
-
   </div>
-
 </section>
-
-
 
 <section id="contact" class="section">
-
   <div class="container">
-
     <h2>Contact</h2>
-
-    <p>
-      Email: shloks4@uw.edu
-    </p>
-
-    <p>
-      GitHub: github.com/shlokshetty4
-    </p>
-
-    <p>
-      LinkedIn: linkedin.com/in/shlok-shetty
-    </p>
-
+    <p>Email: shloks4@uw.edu</p>
+    <p>GitHub: github.com/shlokshetty4</p>
+    <p>LinkedIn: linkedin.com/in/shlok-shetty</p>
   </div>
-
 </section>
 
-
-
 <footer class="footer">
-
   <div class="container">
-
-    <p>
-      © 2026 Shlok Shetty
-    </p>
-
+    <p>© 2026 Shlok Shetty</p>
   </div>
-
 </footer>
 
-
 <script src="script.js"></script>
-
 
 </body>
 </html>
